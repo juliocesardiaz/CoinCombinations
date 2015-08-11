@@ -13,5 +13,7 @@
 		return $app['twig']->render('home_page.html.twig');
 	});
 	
+	
+	
 	return $app;
 ?>
