@@ -14,7 +14,7 @@
 			$result = $test->makeChange($change_to_make);
 			
 			//Assert
-			$this->assertEquals("One penny");			
+			$this->assertEquals("Quarters: 0 Dimes: 0 Nickels: 0 Pennies: 1", $result);			
 		}
 	}
 ?>
