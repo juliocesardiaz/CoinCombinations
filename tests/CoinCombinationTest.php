@@ -1,7 +1,7 @@
 <?php 
 	require_once "src/CoinCombination.php";
 	
-	class CoinCombinationTests extends PHPUnit_Framework_TestCase
+	class CoinCombinationTest extends PHPUnit_Framework_TestCase
 	{
 		//test first spec
 		function testOneCent()
