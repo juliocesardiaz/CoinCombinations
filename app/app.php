@@ -13,6 +13,12 @@
 		return $app['twig']->render('home_page.html.twig');
 	});
 	
+	$app->get("/coin_combination", function() use ($app){
+		$coin_selector = new CoinCombination;
+		$coin_combination = $coin_selector->makeChange($_GET['amount']);
+		return $app['twig']->render('coin_combination_results.html.twig', array('result' => $coin_combination));
+	});
+	
 	
 	
 	return $app;
